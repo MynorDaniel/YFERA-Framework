@@ -1,0 +1,1583 @@
+{
+  "tipo": "Programa",
+  "elementos": [
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "colores-rgb",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "rgb",
+            "valor": "rgb(255, 0, 0)"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "rgb",
+            "valor": "rgb(0, 128, 255)"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "rgb",
+                "valor": "rgb(100, 100, 100)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "colores-hex",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "hex",
+            "valor": "#FF5733"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "hex",
+            "valor": "#000000"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "hex",
+                "valor": "#AABBCC"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "colores-default",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "lightgray"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "blue"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "red"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "dimensiones-completas",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 200
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 300
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 100
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 500
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 50
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 400
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "dimensiones-porcentaje",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "width",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "80%"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "height",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "100%"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-width",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "10%"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-width",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "90%"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-height",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "5%"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-height",
+          "valor": {
+            "tipo": "Porcentaje",
+            "valor": "95%"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "estilos-texto",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-align",
+          "valor": "CENTER"
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-size",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 16
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "HELVETICA"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-fuentes",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "SANS"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-fuentes-2",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "SANS_SERIF"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-fuentes-3",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "MONO"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-fuentes-4",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "CURSIVE"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-alineacion-right",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-align",
+          "valor": "RIGHT"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "texto-alineacion-left",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-align",
+          "valor": "LEFT"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "paddingg-completo",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 10
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-left",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 5
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-top",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 15
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-right",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 20
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-bottom",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 25
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "margin-completo",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 10
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-left",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 5
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-top",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 15
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-right",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 20
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-bottom",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 25
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "bordes-radius",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-radius",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 10
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-style-dotted",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOTTED"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-style-line",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "LINE"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-style-double",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOUBLE"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-individual",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-width",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 3
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "black"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "LINE"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-abreviatura",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 2
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "red"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "border-direcciones",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-top-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOTTED"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-right",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 2
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-bottom-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOUBLE"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-left",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 1
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "green"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "sobreescritura-prueba",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "red"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-right",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 2
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "white"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "lightgray"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "base-estilo",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "lightgray"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 10
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 5
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-radius",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 4
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "LINE"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-width",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 1
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "gray"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "hijo-estilo",
+        "extiende": "base-estilo"
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "blue"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-size",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 14
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "HELVETICA"
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "hijo-sobreescribe",
+        "extiende": "base-estilo"
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "white"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "black"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "black"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "clase-completa",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 150
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 250
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 80
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 600
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "min-height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 40
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "max-height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 300
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "background-color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "hex",
+            "valor": "#F0F0F0"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "rgb",
+            "valor": "rgb(30, 30, 30)"
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-align",
+          "valor": "CENTER"
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-size",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 12
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "text-font",
+          "valor": "SANS"
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 8
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-left",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 12
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-top",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 6
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-right",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 12
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "padding-bottom",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 6
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 4
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-left",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 8
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-top",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 4
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-right",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 8
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "margin-bottom",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 4
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-radius",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 6
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOTTED"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-width",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 2
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-color",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "violet"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 1
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "black"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-top-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOUBLE"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-right",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 3
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "red"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-bottom-style",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "TipoBorde",
+                "valor": "DOTTED"
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "border-left",
+          "valor": {
+            "tipo": "ValorBorde",
+            "partes": [
+              {
+                "tipo": "Numero",
+                "valor": 1
+              },
+              {
+                "tipo": "TipoBorde",
+                "valor": "solid"
+              },
+              {
+                "tipo": "Color",
+                "formato": "nombre",
+                "valor": "green"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Ciclo",
+      "modo": "through",
+      "desde": 1,
+      "hasta": 4,
+      "cuerpo": [
+        {
+          "tipo": "Estilo",
+          "clase": {
+            "nombre": "my-font-$i",
+            "extiende": null
+          },
+          "atributos": [
+            {
+              "tipo": "Atributo",
+              "propiedad": "text-size",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 10
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Ciclo",
+      "modo": "to",
+      "desde": 1,
+      "hasta": 4,
+      "cuerpo": [
+        {
+          "tipo": "Estilo",
+          "clase": {
+            "nombre": "my-font-$i",
+            "extiende": null
+          },
+          "atributos": [
+            {
+              "tipo": "Atributo",
+              "propiedad": "text-size",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 10
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Ciclo",
+      "modo": "through",
+      "desde": 1,
+      "hasta": 5,
+      "cuerpo": [
+        {
+          "tipo": "Estilo",
+          "clase": {
+            "nombre": "col-$i",
+            "extiende": null
+          },
+          "atributos": [
+            {
+              "tipo": "Atributo",
+              "propiedad": "width",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 20
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "height",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "+",
+                "izq": {
+                  "tipo": "Operacion",
+                  "op": "*",
+                  "izq": {
+                    "tipo": "Indice",
+                    "valor": "$i"
+                  },
+                  "der": {
+                    "tipo": "Numero",
+                    "valor": 10
+                  }
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 5
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "padding",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 2
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "margin",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "+",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Ciclo",
+      "modo": "through",
+      "desde": 2,
+      "hasta": 6,
+      "cuerpo": [
+        {
+          "tipo": "Estilo",
+          "clase": {
+            "nombre": "grid-$i",
+            "extiende": null
+          },
+          "atributos": [
+            {
+              "tipo": "Atributo",
+              "propiedad": "width",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "/",
+                "izq": {
+                  "tipo": "Operacion",
+                  "op": "*",
+                  "izq": {
+                    "tipo": "Indice",
+                    "valor": "$i"
+                  },
+                  "der": {
+                    "tipo": "Numero",
+                    "valor": 100
+                  }
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 6
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "height",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "margin",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "%",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Ciclo",
+      "modo": "through",
+      "desde": 1,
+      "hasta": 3,
+      "cuerpo": [
+        {
+          "tipo": "Estilo",
+          "clase": {
+            "nombre": "boton-$i",
+            "extiende": "base-estilo"
+          },
+          "atributos": [
+            {
+              "tipo": "Atributo",
+              "propiedad": "text-size",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "+",
+                "izq": {
+                  "tipo": "Operacion",
+                  "op": "*",
+                  "izq": {
+                    "tipo": "Indice",
+                    "valor": "$i"
+                  },
+                  "der": {
+                    "tipo": "Numero",
+                    "valor": 4
+                  }
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 10
+                }
+              }
+            },
+            {
+              "tipo": "Atributo",
+              "propiedad": "padding",
+              "valor": {
+                "tipo": "Operacion",
+                "op": "*",
+                "izq": {
+                  "tipo": "Indice",
+                  "valor": "$i"
+                },
+                "der": {
+                  "tipo": "Numero",
+                  "valor": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "sin-ultimo-punto-coma",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "width",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 100
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "height",
+          "valor": {
+            "tipo": "Numero",
+            "valor": 50
+          }
+        },
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "black"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "solo-color",
+        "extiende": null
+      },
+      "atributos": [
+        {
+          "tipo": "Atributo",
+          "propiedad": "color",
+          "valor": {
+            "tipo": "Color",
+            "formato": "nombre",
+            "valor": "green"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Estilo",
+      "clase": {
+        "nombre": "clase-vacia",
+        "extiende": null
+      },
+      "atributos": []
+    }
+  ]
+}

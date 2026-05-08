@@ -1,0 +1,252 @@
+/* --- Colores en distintos formatos --- */
+colores-rgb {
+    background color = rgb(255, 0, 0);
+    color = rgb(0, 128, 255);
+    border color = rgb(100, 100, 100);
+}
+
+colores-hex {
+    background color = #FF5733;
+    color = #000000;
+    border color = #AABBCC;
+}
+
+colores-default {
+    background color = lightgray;
+    color = blue;
+    border color = red;
+}
+
+/* --- Todas las propiedades de dimensiones --- */
+dimensiones-completas {
+    height = 200;
+    width = 300;
+    min-width = 100;
+    max-width = 500;
+    min-height = 50;
+    max-height = 400;
+}
+
+/* --- Dimensiones con porcentaje --- */
+dimensiones-porcentaje {
+    width = 80%;
+    height = 100%;
+    min-width = 10%;
+    max-width = 90%;
+    min-height = 5%;
+    max-height = 95%;
+}
+
+/* --- Texto: todas las propiedades --- */
+estilos-texto {
+    text align = CENTER;
+    text size = 16;
+    text font = HELVETICA;
+}
+
+texto-fuentes {
+    text font = SANS;
+}
+
+texto-fuentes-2 {
+    text font = SANS SERIF ;
+}
+
+texto-fuentes-3 {
+    text font = MONO;
+}
+
+texto-fuentes-4 {
+    text font = CURSIVE;
+}
+
+texto-alineacion-right {
+    text align = RIGHT;
+}
+
+texto-alineacion-left {
+    text align = LEFT;
+}
+
+/* --- Padding: todas las variantes --- */
+paddingg-completo {
+    padding = 10;
+    padding left = 5;
+    padding top = 15;
+    padding right = 20;
+    padding bottom = 25;
+}
+
+/* --- Margin: todas las variantes --- */
+margin-completo {
+    margin = 10;
+    margin left = 5;
+    margin top = 15;
+    margin right = 20;
+    margin bottom = 25;
+}
+
+/* --- Border radius --- */
+bordes-radius {
+    border radius = 10;
+}
+
+/* --- Border style: todos los estilos --- */
+border-style-dotted {
+    border style = DOTTED;
+}
+
+border-style-line {
+    border style = LINE;
+}
+
+border-style-double {
+    border style = DOUBLE;
+}
+
+/* --- Border: propiedades individuales --- */
+border-individual {
+    border width = 3;
+    border color = black;
+    border style = LINE;
+}
+
+/* --- Border: abreviatura --- */
+border-abreviatura {
+    border = 2 solid red;
+}
+
+/* --- Border: combinacion con las 4 direcciones --- */
+border-direcciones {
+    border top style = DOTTED;
+    border right = 2 solid blue;
+    border bottom style = DOUBLE;
+    border left = 1 solid green;
+}
+
+/* --- Sobreescritura de propiedades (se aplica la ultima) --- */
+sobreescritura-prueba {
+    border color = red;
+    border right = 2 solid blue;
+    /* el borde derecho sera azul, los demas rojos */
+    background color = white;
+    background color = lightgray;
+    /* el fondo quedara lightgray */
+}
+
+/* --- Clase base para herencia --- */
+base-estilo {
+    background color = lightgray;
+    padding = 10;
+    margin = 5;
+    border radius = 4;
+    border style = LINE;
+    border width = 1;
+    border color = gray;
+}
+
+/* --- Herencia simple con extends --- */
+hijo-estilo extends base-estilo {
+    color = blue;
+    text size = 14;
+    text font = HELVETICA;
+}
+
+/* --- Herencia con sobreescritura --- */
+hijo-sobreescribe extends base-estilo {
+    background color = white;
+    /* sobreescribe el lightgray del padre */
+    color = black;
+    border color = black;
+}
+
+/* --- Clase con TODAS las propiedades posibles --- */
+clase-completa {
+    height = 150;
+    width = 250;
+    min-width = 80;
+    max-width = 600;
+    min-height = 40;
+    max-height = 300;
+    background color = #F0F0F0;
+    color = rgb(30, 30, 30);
+    text align = CENTER;
+    text size = 12;
+    text font = SANS;
+    padding = 8;
+    padding left = 12;
+    padding top = 6;
+    padding right = 12;
+    padding bottom = 6;
+    margin = 4;
+    margin left = 8;
+    margin top = 4;
+    margin right = 8;
+    margin bottom = 4;
+    border radius = 6;
+    border style = DOTTED;
+    border width = 2;
+    border color = violet;
+    border = 1 solid black;
+    border top style = DOUBLE;
+    border right = 3 solid red;
+    border bottom style = DOTTED;
+    border left = 1 solid green;
+}
+
+/* --- @for con through (incluyente) --- */
+@for $i from 1 through 4 {
+    my-font-$i {
+        text size = $i * 10;
+    }
+}
+
+/* --- @for con to (excluyente) --- */
+@for $i from 1 to 4 {
+    my-font-$i {
+        text size = $i * 10;
+    }
+}
+
+/* --- @for con expresiones aritmeticas --- */
+@for $i from 1 through 5 {
+    col-$i {
+        width = $i * 20;
+        height = $i * 10 + 5;
+        padding = $i * 2;
+        margin = $i + 1;
+    }
+}
+
+/* --- @for con operaciones mas complejas --- */
+@for $i from 2 through 6 {
+    grid-$i {
+        width = ($i * 100) / 6;
+        height = $i * $i;
+        margin = $i % 3;
+    }
+}
+
+/* --- @for que hereda (uso en nombre con extends) --- */
+@for $i from 1 through 3 {
+    boton-$i extends base-estilo {
+        text size = $i * 4 + 10;
+        padding = $i * 3;
+    }
+}
+
+/* --- Casos limite: sin punto y coma en ultima propiedad --- */
+sin-ultimo-punto-coma {
+    width = 100;
+    height = 50;
+    color = black;
+}
+
+/* --- Clase con solo una propiedad --- */
+solo-color {
+    color = green;
+}
+
+/* --- Clase vacia --- */
+clase-vacia {
+}
