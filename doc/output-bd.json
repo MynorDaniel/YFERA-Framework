@@ -1,0 +1,176 @@
+{
+  "tipo": "Programa",
+  "elementos": [
+    {
+      "tipo": "Create",
+      "tabla": "usuarios",
+      "columnas": [
+        {
+          "columna": "nombre",
+          "tipo": "string"
+        },
+        {
+          "columna": "edad",
+          "tipo": "int"
+        },
+        {
+          "columna": "activo",
+          "tipo": "boolean"
+        },
+        {
+          "columna": "saldo",
+          "tipo": "float"
+        }
+      ]
+    },
+    {
+      "tipo": "Create",
+      "tabla": "productos",
+      "columnas": [
+        {
+          "columna": "descripcion",
+          "tipo": "string"
+        },
+        {
+          "columna": "precio",
+          "tipo": "float"
+        },
+        {
+          "columna": "stock",
+          "tipo": "int"
+        }
+      ]
+    },
+    {
+      "tipo": "Select",
+      "tabla": "usuarios",
+      "columna": "nombre"
+    },
+    {
+      "tipo": "Select",
+      "tabla": "productos",
+      "columna": "precio"
+    },
+    {
+      "tipo": "Insert",
+      "tabla": "usuarios",
+      "asignaciones": [
+        {
+          "campo": "nombre",
+          "valor": {
+            "tipo": "Cadena",
+            "valor": "\"Juan Perez\""
+          }
+        },
+        {
+          "campo": "edad",
+          "valor": {
+            "tipo": "Entero",
+            "valor": 30
+          }
+        },
+        {
+          "campo": "activo",
+          "valor": {
+            "tipo": "Booleano",
+            "valor": true
+          }
+        },
+        {
+          "campo": "saldo",
+          "valor": {
+            "tipo": "Decimal",
+            "valor": 150.75
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Insert",
+      "tabla": "productos",
+      "asignaciones": [
+        {
+          "campo": "descripcion",
+          "valor": {
+            "tipo": "CadenaSimple",
+            "valor": "'Laptop'"
+          }
+        },
+        {
+          "campo": "precio",
+          "valor": {
+            "tipo": "Decimal",
+            "valor": 4500.99
+          }
+        },
+        {
+          "campo": "stock",
+          "valor": {
+            "tipo": "Entero",
+            "valor": 10
+          }
+        },
+        {
+          "campo": "activo",
+          "valor": {
+            "tipo": "Booleano",
+            "valor": false
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Update",
+      "tabla": "usuarios",
+      "asignaciones": [
+        {
+          "campo": "nombre",
+          "valor": {
+            "tipo": "Cadena",
+            "valor": "\"Maria Lopez\""
+          }
+        },
+        {
+          "campo": "saldo",
+          "valor": {
+            "tipo": "Decimal",
+            "valor": 200
+          }
+        }
+      ],
+      "indice": 1
+    },
+    {
+      "tipo": "Update",
+      "tabla": "productos",
+      "asignaciones": [
+        {
+          "campo": "precio",
+          "valor": {
+            "tipo": "Decimal",
+            "valor": 3999.99
+          }
+        },
+        {
+          "campo": "stock",
+          "valor": {
+            "tipo": "Entero",
+            "valor": 5
+          }
+        }
+      ],
+      "indice": 0
+    },
+    {
+      "tipo": "Delete",
+      "tabla": "usuarios",
+      "indice": 2
+    },
+    {
+      "tipo": "Delete",
+      "tabla": "productos",
+      "indice": 0
+    }
+  ],
+  "errores": []
+}

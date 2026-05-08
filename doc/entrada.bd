@@ -1,0 +1,19 @@
+/* Crear tablas */
+TABLE usuarios COLUMNS nombre = string, edad = int, activo = boolean, saldo = float;
+TABLE productos COLUMNS descripcion = string, precio = float, stock = int;
+
+/* Selects */
+usuarios.nombre;
+productos.precio;
+
+/* Inserts */
+usuarios[nombre = "Juan Perez", edad = 30, activo = true, saldo = 150.75];
+productos[descripcion = 'Laptop', precio = 4500.99, stock = 10, activo = false];
+
+/* Updates */
+usuarios[nombre = "Maria Lopez", saldo = 200.00] IN 1;
+productos[precio = 3999.99, stock = 5] IN 0;
+
+/* Deletes */
+usuarios DELETE 2;
+productos DELETE 0;
