@@ -1,0 +1,405 @@
+
+/* Componente sin parametros */
+emptyComponent() {
+}
+
+/* Componente con todos los tipos de parametros */
+fullParamsComponent(int count, string title, boolean isVisible, function onAction) {
+
+    /* Seccion simple sin estilos */
+    [
+        T("Seccion sin estilos")
+    ]
+
+    /* Seccion con un estilo */
+    <mi-clase>[
+        T("Seccion con un estilo")
+    ]
+
+    /* Seccion con multiples estilos */
+    <estilo-uno, estilo-dos, estilo-tres>[
+        T("Seccion con multiples estilos")
+    ]
+
+    /* Secciones anidadas */
+    <padre>[
+        <hijo>[
+            <nieto>[
+                T("Seccion profundamente anidada")
+            ]
+        ]
+    ]
+
+    /* Texto sin estilos, cadena simple */
+    T("Texto simple sin estilos")
+
+    /* Texto con estilos */
+    T<titulo, destacado>("Texto con estilos")
+
+    /* Texto con variable */
+    T("Hola " + $title)
+
+    /* Texto con entero */
+    T("El conteo es " + 42)
+
+    /* Texto con booleano */
+    T("Valor: " + true)
+    T("Otro: " + false)
+
+    /* Texto con expresion backtick */
+    T(`$count + 10`)
+
+    /* Texto con multiples concatenaciones */
+    T("Usuario: " + $title + " | Conteo: " + $count + " | Activo: " + $isVisible)
+
+    /* Texto con backtick mezclado */
+    T("Total con IVA: " + `$count * 1.12` + " quetzales")
+
+    /* Imagen simple */
+    IMG("https://example.com/imagen.png")
+
+    /* Imagen con estilos */
+    IMG<foto-grande>("https://example.com/foto.jpg")
+
+    /* Carrusel de imagenes con URLs y variables */
+    IMG<carrusel, galeria>("https://example.com/img1.png", "https://example.com/img2.png", $avatarUrl, $bannerUrl)
+
+    /* Tabla simple sin estilos */
+    [[
+        [[
+            [[ T("Celda 1-1") ]]
+            [[ T("Celda 1-2") ]]
+        ]]
+        [[
+            [[ T("Celda 2-1") ]]
+            [[ T("Celda 2-2") ]]
+        ]]
+    ]]
+
+    /* Tabla con estilos */
+    <tabla-estilo>[[
+        [[
+            [[ T<encabezado>("Nombre") ]]
+            [[ T<encabezado>("Edad") ]]
+            [[ T<encabezado>("Activo") ]]
+        ]]
+        [[
+            [[ T($title) ]]
+            [[ T($count) ]]
+            [[ T($isVisible) ]]
+        ]]
+    ]]
+
+    /* Tabla con elementos complejos en celdas */
+    [[
+        [[
+            [[
+                IMG("https://example.com/icon.png")
+                T("Con imagen adentro")
+            ]]
+        ]]
+    ]]
+}
+
+/* Componente con formulario completo */
+formComponent(string currentName, int currentPP, function onSubmit) {
+
+    /* Formulario sin estilos con todos los tipos de input */
+    FORM {
+        INPUT_TEXT(
+            id: "name",
+            label: "Nombre completo",
+            value: $currentName
+        )
+        INPUT_NUMBER(
+            id: "pp",
+            label: "Puntos de poder",
+            value: $currentPP
+        )
+        INPUT_BOOL(
+            id: "active",
+            label: "Esta activo?",
+            value: true
+        )
+    } SUBMIT {
+        label: "Guardar"
+        function: $onSubmit(@name, @pp, @active)
+    }
+
+    /* Formulario con estilos en todo */
+    FORM<form-grande, form-estilo> {
+        INPUT_TEXT<input-nombre>(
+            id: "username",
+            label: "Usuario",
+            value: "default"
+        )
+        INPUT_NUMBER<input-numero>(
+            id: "edad",
+            label: "Edad",
+            value: 18
+        )
+        INPUT_BOOL<input-check>(
+            id: "terminos",
+            label: "Acepta terminos?",
+            value: false
+        )
+    } SUBMIT<btn-primario, btn-grande> {
+        label: "Registrarse"
+        function: $onSubmit(@username, @edad, @terminos)
+    }
+
+    /* Formulario sin submit */
+    FORM<sin-submit> {
+        INPUT_TEXT(
+            id: "buscar",
+            label: "Buscar",
+            value: ""
+        )
+    }
+}
+
+/* Componente con todos los ciclos for */
+forComponent(int myList, boolean secondList, function handler) {
+
+    /* For each simple */
+    for each ($myList : $item) {
+        T("Item: " + $item)
+    }
+
+    /* For each con elementos complejos adentro */
+    for each ($myList : $current) {
+        <card>[
+            T<nombre>($current)
+            IMG("https://example.com/placeholder.png")
+        ]
+    }
+
+    /* For doble sin empty */
+    for ($myList : $item, $secondList : $extra) track $idx {
+        T("Elemento " + $idx + ": " + $item + " - " + $extra)
+    }
+
+    /* For doble con empty */
+    for ($myList : $item, $secondList : $complement) track $index {
+        <fila>[
+            T("Principal: " + $item)
+            T("Complemento: " + $complement)
+            T("Indice: " + `$index + 1`)
+        ]
+    } empty {
+        <vacio>[
+            T<mensaje-vacio>("No hay elementos que mostrar")
+            IMG<icono-vacio>("https://example.com/empty.png")
+        ]
+    }
+
+    /* For anidado */
+    for each ($myList : $outer) {
+        for each ($secondList : $inner) {
+            T("Outer: " + $outer + " Inner: " + $inner)
+        }
+    }
+}
+
+/* Componente con todos los condicionales */
+ifComponent(string role, int score, boolean premium) {
+
+    /* If simple */
+    if( $role == "admin" ) {
+        T("Eres admin")
+    }
+
+    /* If con else */
+    if( $score == 100 ) {
+        T("Puntaje perfecto")
+    } else {
+        T("Puntaje no perfecto")
+    }
+
+    /* If con elseif y else */
+    if( $role == "admin" ) {
+        T<admin_msg>("Panel de administracion")
+    } else ( $role == "moderator" ) {
+        T<mod_msg>("Panel de moderacion")
+    } else ( $role == "user" ) {
+        T<user_msg>("Panel de usuario")
+    } else {
+        T<default_msg>("Rol desconocido")
+    }
+
+    /* Condicion con AND */
+    if( $role == "admin" && $premium == true ) {
+        T("Admin premium")
+    }
+
+    /* Condicion con OR */
+    if( $role == "admin" || $role == "superadmin" ) {
+        T("Tiene acceso total")
+    }
+
+    /* Condicion con NOT */
+    if( !$premium ) {
+        T("No es premium")
+    }
+
+    /* Condicion compleja combinada */
+    if( $score >= 90 && $premium == true || $role == "admin" ) {
+        T("Acceso especial concedido")
+    } else ( $score < 50 && !$premium ) {
+        T("Acceso denegado")
+    } else {
+        T("Acceso estandar")
+    }
+
+    /* Todos los operadores de comparacion */
+    if( $score == 100 ) { T("igual") }
+    if( $score != 0 ) { T("diferente") }
+    if( $score > 50 ) { T("mayor que") }
+    if( $score < 50 ) { T("menor que") }
+    if( $score >= 50 ) { T("mayor igual") }
+    if( $score <= 50 ) { T("menor igual") }
+
+    /* If anidado */
+    if( $premium == true ) {
+        if( $role == "admin" ) {
+            T("Admin premium confirmado")
+        } else {
+            T("Usuario premium")
+        }
+    } else {
+        T("Sin premium")
+    }
+}
+
+/* Componente con switch */
+switchComponent(string status, int code) {
+
+    /* Switch simple con default */
+    Switch( $status ) {
+        case "active" {
+            T<badge-green>("Activo")
+        },
+        case "inactive" {
+            T<badge-red>("Inactivo")
+        },
+        case "pending" {
+            T<badge-yellow>("Pendiente")
+        },
+        default {
+            T<badge-gray>("Estado desconocido")
+        }
+    }
+
+    /* Switch sin default */
+    Switch( $code ) {
+        case "200" {
+            T("OK")
+        },
+        case "404" {
+            T("No encontrado")
+        },
+        case "500" {
+            T("Error interno")
+        }
+    }
+
+    /* Switch con elementos complejos en cases */
+    Switch( $status ) {
+        case "withForm" {
+            FORM {
+                INPUT_TEXT(
+                    id: "field",
+                    label: "Campo",
+                    value: ""
+                )
+            }
+        },
+        case "withImage" {
+            IMG<case_img>("https://example.com/case.png")
+        },
+        default {
+            <default_section>[
+                T("Caso por defecto con seccion")
+            ]
+        }
+    }
+
+    /* Switch con variable booleana */
+    Switch( $status ) {
+        case true {
+            T("Es verdadero")
+        },
+        case false {
+            T("Es falso")
+        }
+    }
+}
+
+/* Componente que combina todo */
+dashboardComponent(string username, int itemCount, boolean isAdmin, function onLogout) {
+
+    /* Header con info del usuario */
+    <header, sticky>[
+        <logo>[
+            IMG<logo-img>("https://example.com/logo.png")
+        ]
+        <user-info>[
+            T<greeting>("Bienvenido, " + $username)
+            T<count-badge>("Items: " + $itemCount)
+        ]
+    ]
+
+    /* Navegacion condicional */
+    <nav>[
+        if( $isAdmin == true ) {
+            <admin-links>[
+                T<link>("Usuarios")
+                T<link>("Configuracion")
+                T<link>("Reportes")
+            ]
+        } else {
+            <user-links>[
+                T<link>("Mi perfil")
+                T<link>("Mis items")
+            ]
+        }
+    ]
+
+    /* Tabla de items con for */
+    <main-content>[
+        <tabla-wrapper>[[
+            [[
+                [[ T<th>("Item") ]]
+                [[ T<th>("Estado") ]]
+            ]]
+        ]]
+
+        for each ($itemCount : $item) {
+            <card-item>[
+                T($item)
+                Switch( $item ) {
+                    case "active" {
+                        T<status-ok>("Activo")
+                    },
+                    default {
+                        T<status-off>("Inactivo")
+                    }
+                }
+            ]
+        }
+    ]
+
+    /* Footer con logout */
+    <footer>[
+        FORM {
+            INPUT_BOOL(
+                id: "confirm",
+                label: "Confirmar salida",
+                value: false
+            )
+        } SUBMIT<btn-logout> {
+            label: "Cerrar sesion"
+            function: $onLogout(@confirm)
+        }
+    ]
+}

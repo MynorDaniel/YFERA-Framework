@@ -1,0 +1,2241 @@
+{
+  "tipo": "Programa",
+  "componentes": [
+    {
+      "tipo": "Componente",
+      "nombre": "emptyComponent",
+      "parametros": [],
+      "elementos": []
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "fullParamsComponent",
+      "parametros": [
+        {
+          "tipo": "int",
+          "nombre": "count"
+        },
+        {
+          "tipo": "string",
+          "nombre": "title"
+        },
+        {
+          "tipo": "boolean",
+          "nombre": "isVisible"
+        },
+        {
+          "tipo": "function",
+          "nombre": "onAction"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "Seccion",
+          "estilos": [],
+          "elementos": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Seccion sin estilos\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "mi-clase"
+          ],
+          "elementos": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Seccion con un estilo\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "estilo-uno",
+            "estilo-dos",
+            "estilo-tres"
+          ],
+          "elementos": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Seccion con multiples estilos\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "padre"
+          ],
+          "elementos": [
+            {
+              "tipo": "Seccion",
+              "estilos": [
+                "hijo"
+              ],
+              "elementos": [
+                {
+                  "tipo": "Seccion",
+                  "estilos": [
+                    "nieto"
+                  ],
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Seccion profundamente anidada\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Texto simple sin estilos\""
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [
+            "titulo",
+            "destacado"
+          ],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Texto con estilos\""
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Hola \""
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "title"
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"El conteo es \""
+            },
+            {
+              "tipo": "Entero",
+              "valor": 42
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Valor: \""
+            },
+            {
+              "tipo": "Booleano",
+              "valor": true
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Otro: \""
+            },
+            {
+              "tipo": "Booleano",
+              "valor": false
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Expresion",
+              "valor": "`$count + 10`"
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Usuario: \""
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "title"
+            },
+            {
+              "tipo": "Cadena",
+              "valor": "\" | Conteo: \""
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "count"
+            },
+            {
+              "tipo": "Cadena",
+              "valor": "\" | Activo: \""
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "isVisible"
+            }
+          ]
+        },
+        {
+          "tipo": "Texto",
+          "estilos": [],
+          "contenido": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"Total con IVA: \""
+            },
+            {
+              "tipo": "Expresion",
+              "valor": "`$count * 1.12`"
+            },
+            {
+              "tipo": "Cadena",
+              "valor": "\" quetzales\""
+            }
+          ]
+        },
+        {
+          "tipo": "Imagen",
+          "estilos": [],
+          "urls": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"https://example.com/imagen.png\""
+            }
+          ]
+        },
+        {
+          "tipo": "Imagen",
+          "estilos": [
+            "foto-grande"
+          ],
+          "urls": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"https://example.com/foto.jpg\""
+            }
+          ]
+        },
+        {
+          "tipo": "Imagen",
+          "estilos": [
+            "carrusel",
+            "galeria"
+          ],
+          "urls": [
+            {
+              "tipo": "Cadena",
+              "valor": "\"https://example.com/img1.png\""
+            },
+            {
+              "tipo": "Cadena",
+              "valor": "\"https://example.com/img2.png\""
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "avatarUrl"
+            },
+            {
+              "tipo": "Variable",
+              "nombre": "bannerUrl"
+            }
+          ]
+        },
+        {
+          "tipo": "Tabla",
+          "estilos": [],
+          "filas": [
+            {
+              "tipo": "Fila",
+              "celdas": [
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Celda 1-1\""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Celda 1-2\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Fila",
+              "celdas": [
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Celda 2-1\""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Celda 2-2\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Tabla",
+          "estilos": [
+            "tabla-estilo"
+          ],
+          "filas": [
+            {
+              "tipo": "Fila",
+              "celdas": [
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "encabezado"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Nombre\""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "encabezado"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Edad\""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "encabezado"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Activo\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Fila",
+              "celdas": [
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Variable",
+                          "nombre": "title"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Variable",
+                          "nombre": "count"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Variable",
+                          "nombre": "isVisible"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Tabla",
+          "estilos": [],
+          "filas": [
+            {
+              "tipo": "Fila",
+              "celdas": [
+                {
+                  "tipo": "Celda",
+                  "elementos": [
+                    {
+                      "tipo": "Imagen",
+                      "estilos": [],
+                      "urls": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"https://example.com/icon.png\""
+                        }
+                      ]
+                    },
+                    {
+                      "tipo": "Texto",
+                      "estilos": [],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Con imagen adentro\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "formComponent",
+      "parametros": [
+        {
+          "tipo": "string",
+          "nombre": "currentName"
+        },
+        {
+          "tipo": "int",
+          "nombre": "currentPP"
+        },
+        {
+          "tipo": "function",
+          "nombre": "onSubmit"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "Formulario",
+          "estilos": [],
+          "inputs": [
+            {
+              "tipo": "InputText",
+              "attrs": {
+                "estilos": [],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"name\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Nombre completo\""
+                },
+                "value": {
+                  "tipo": "Variable",
+                  "nombre": "currentName"
+                }
+              }
+            },
+            {
+              "tipo": "InputNumber",
+              "attrs": {
+                "estilos": [],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"pp\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Puntos de poder\""
+                },
+                "value": {
+                  "tipo": "Variable",
+                  "nombre": "currentPP"
+                }
+              }
+            },
+            {
+              "tipo": "InputBool",
+              "attrs": {
+                "estilos": [],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"active\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Esta activo?\""
+                },
+                "value": {
+                  "tipo": "Booleano",
+                  "valor": true
+                }
+              }
+            }
+          ],
+          "submit": {
+            "tipo": "Submit",
+            "estilos": [],
+            "label": {
+              "tipo": "Cadena",
+              "valor": "\"Guardar\""
+            },
+            "funcion": {
+              "tipo": "LlamadaFuncion",
+              "nombre": "onSubmit",
+              "args": [
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "name"
+                },
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "pp"
+                },
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "active"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "tipo": "Formulario",
+          "estilos": [
+            "form-grande",
+            "form-estilo"
+          ],
+          "inputs": [
+            {
+              "tipo": "InputText",
+              "attrs": {
+                "estilos": [
+                  "input-nombre"
+                ],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"username\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Usuario\""
+                },
+                "value": {
+                  "tipo": "Cadena",
+                  "valor": "\"default\""
+                }
+              }
+            },
+            {
+              "tipo": "InputNumber",
+              "attrs": {
+                "estilos": [
+                  "input-numero"
+                ],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"edad\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Edad\""
+                },
+                "value": {
+                  "tipo": "Entero",
+                  "valor": 18
+                }
+              }
+            },
+            {
+              "tipo": "InputBool",
+              "attrs": {
+                "estilos": [
+                  "input-check"
+                ],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"terminos\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Acepta terminos?\""
+                },
+                "value": {
+                  "tipo": "Booleano",
+                  "valor": false
+                }
+              }
+            }
+          ],
+          "submit": {
+            "tipo": "Submit",
+            "estilos": [
+              "btn-primario",
+              "btn-grande"
+            ],
+            "label": {
+              "tipo": "Cadena",
+              "valor": "\"Registrarse\""
+            },
+            "funcion": {
+              "tipo": "LlamadaFuncion",
+              "nombre": "onSubmit",
+              "args": [
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "username"
+                },
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "edad"
+                },
+                {
+                  "tipo": "ArgInput",
+                  "nombre": "terminos"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "tipo": "Formulario",
+          "estilos": [
+            "sin-submit"
+          ],
+          "inputs": [
+            {
+              "tipo": "InputText",
+              "attrs": {
+                "estilos": [],
+                "id": {
+                  "tipo": "Cadena",
+                  "valor": "\"buscar\""
+                },
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Buscar\""
+                },
+                "value": {
+                  "tipo": "Cadena",
+                  "valor": "\"\""
+                }
+              }
+            }
+          ],
+          "submit": null
+        }
+      ]
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "forComponent",
+      "parametros": [
+        {
+          "tipo": "int",
+          "nombre": "myList"
+        },
+        {
+          "tipo": "boolean",
+          "nombre": "secondList"
+        },
+        {
+          "tipo": "function",
+          "nombre": "handler"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "ForEach",
+          "array": "myList",
+          "item": "item",
+          "elementos": "}",
+          "empty": null
+        },
+        {
+          "tipo": "ForEach",
+          "array": "myList",
+          "item": "current",
+          "elementos": "}",
+          "empty": null
+        },
+        {
+          "tipo": "ForDoble",
+          "array1": "myList",
+          "item1": "item",
+          "array2": "secondList",
+          "item2": "extra",
+          "track": "idx",
+          "elementos": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Elemento \""
+                },
+                {
+                  "tipo": "Variable",
+                  "nombre": "idx"
+                },
+                {
+                  "tipo": "Cadena",
+                  "valor": "\": \""
+                },
+                {
+                  "tipo": "Variable",
+                  "nombre": "item"
+                },
+                {
+                  "tipo": "Cadena",
+                  "valor": "\" - \""
+                },
+                {
+                  "tipo": "Variable",
+                  "nombre": "extra"
+                }
+              ]
+            }
+          ],
+          "empty": null
+        },
+        {
+          "tipo": "ForDoble",
+          "array1": "myList",
+          "item1": "item",
+          "array2": "secondList",
+          "item2": "complement",
+          "track": "index",
+          "elementos": [
+            {
+              "tipo": "Seccion",
+              "estilos": [
+                "fila"
+              ],
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Principal: \""
+                    },
+                    {
+                      "tipo": "Variable",
+                      "nombre": "item"
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Complemento: \""
+                    },
+                    {
+                      "tipo": "Variable",
+                      "nombre": "complement"
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Indice: \""
+                    },
+                    {
+                      "tipo": "Expresion",
+                      "valor": "`$index + 1`"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "empty": {
+            "tipo": "Empty",
+            "elementos": [
+              {
+                "tipo": "Seccion",
+                "estilos": [
+                  "vacio"
+                ],
+                "elementos": [
+                  {
+                    "tipo": "Texto",
+                    "estilos": [
+                      "mensaje-vacio"
+                    ],
+                    "contenido": [
+                      {
+                        "tipo": "Cadena",
+                        "valor": "\"No hay elementos que mostrar\""
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "Imagen",
+                    "estilos": [
+                      "icono-vacio"
+                    ],
+                    "urls": [
+                      {
+                        "tipo": "Cadena",
+                        "valor": "\"https://example.com/empty.png\""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "ForEach",
+          "array": "myList",
+          "item": "outer",
+          "elementos": "}",
+          "empty": null
+        }
+      ]
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "ifComponent",
+      "parametros": [
+        {
+          "tipo": "string",
+          "nombre": "role"
+        },
+        {
+          "tipo": "int",
+          "nombre": "score"
+        },
+        {
+          "tipo": "boolean",
+          "nombre": "premium"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "role"
+            },
+            "op": "==",
+            "der": {
+              "tipo": "Cadena",
+              "valor": "\"admin\""
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Eres admin\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": "==",
+            "der": {
+              "tipo": "Entero",
+              "valor": 100
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Puntaje perfecto\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": {
+            "tipo": "Else",
+            "elementos": [
+              {
+                "tipo": "Texto",
+                "estilos": [],
+                "contenido": [
+                  {
+                    "tipo": "Cadena",
+                    "valor": "\"Puntaje no perfecto\""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "role"
+            },
+            "op": "==",
+            "der": {
+              "tipo": "Cadena",
+              "valor": "\"admin\""
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [
+                "admin_msg"
+              ],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Panel de administracion\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [
+            {
+              "tipo": "ElseIf",
+              "condicion": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "role"
+                },
+                "op": "==",
+                "der": {
+                  "tipo": "Cadena",
+                  "valor": "\"moderator\""
+                }
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "mod_msg"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Panel de moderacion\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "ElseIf",
+              "condicion": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "role"
+                },
+                "op": "==",
+                "der": {
+                  "tipo": "Cadena",
+                  "valor": "\"user\""
+                }
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "user_msg"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Panel de usuario\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sino": {
+            "tipo": "Else",
+            "elementos": [
+              {
+                "tipo": "Texto",
+                "estilos": [
+                  "default_msg"
+                ],
+                "contenido": [
+                  {
+                    "tipo": "Cadena",
+                    "valor": "\"Rol desconocido\""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "CondAnd",
+            "izq": {
+              "tipo": "Comparacion",
+              "izq": {
+                "tipo": "Variable",
+                "nombre": "role"
+              },
+              "op": "==",
+              "der": {
+                "tipo": "Cadena",
+                "valor": "\"admin\""
+              }
+            },
+            "der": {
+              "tipo": "Comparacion",
+              "izq": {
+                "tipo": "Variable",
+                "nombre": "premium"
+              },
+              "op": "==",
+              "der": {
+                "tipo": "Booleano",
+                "valor": true
+              }
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Admin premium\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "CondOr",
+            "izq": {
+              "tipo": "Comparacion",
+              "izq": {
+                "tipo": "Variable",
+                "nombre": "role"
+              },
+              "op": "==",
+              "der": {
+                "tipo": "Cadena",
+                "valor": "\"admin\""
+              }
+            },
+            "der": {
+              "tipo": "Comparacion",
+              "izq": {
+                "tipo": "Variable",
+                "nombre": "role"
+              },
+              "op": "==",
+              "der": {
+                "tipo": "Cadena",
+                "valor": "\"superadmin\""
+              }
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Tiene acceso total\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "CondNot",
+            "valor": {
+              "tipo": "CondValor",
+              "valor": {
+                "tipo": "Variable",
+                "nombre": "premium"
+              }
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"No es premium\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "CondOr",
+            "izq": {
+              "tipo": "CondAnd",
+              "izq": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "score"
+                },
+                "op": ">=",
+                "der": {
+                  "tipo": "Entero",
+                  "valor": 90
+                }
+              },
+              "der": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "premium"
+                },
+                "op": "==",
+                "der": {
+                  "tipo": "Booleano",
+                  "valor": true
+                }
+              }
+            },
+            "der": {
+              "tipo": "Comparacion",
+              "izq": {
+                "tipo": "Variable",
+                "nombre": "role"
+              },
+              "op": "==",
+              "der": {
+                "tipo": "Cadena",
+                "valor": "\"admin\""
+              }
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"Acceso especial concedido\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [
+            {
+              "tipo": "ElseIf",
+              "condicion": {
+                "tipo": "CondAnd",
+                "izq": {
+                  "tipo": "Comparacion",
+                  "izq": {
+                    "tipo": "Variable",
+                    "nombre": "score"
+                  },
+                  "op": "<",
+                  "der": {
+                    "tipo": "Entero",
+                    "valor": 50
+                  }
+                },
+                "der": {
+                  "tipo": "CondNot",
+                  "valor": {
+                    "tipo": "CondValor",
+                    "valor": {
+                      "tipo": "Variable",
+                      "nombre": "premium"
+                    }
+                  }
+                }
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Acceso denegado\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sino": {
+            "tipo": "Else",
+            "elementos": [
+              {
+                "tipo": "Texto",
+                "estilos": [],
+                "contenido": [
+                  {
+                    "tipo": "Cadena",
+                    "valor": "\"Acceso estandar\""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": "==",
+            "der": {
+              "tipo": "Entero",
+              "valor": 100
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"igual\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": "!=",
+            "der": {
+              "tipo": "Entero",
+              "valor": 0
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"diferente\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": ">",
+            "der": {
+              "tipo": "Entero",
+              "valor": 50
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"mayor que\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": "<",
+            "der": {
+              "tipo": "Entero",
+              "valor": 50
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"menor que\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": ">=",
+            "der": {
+              "tipo": "Entero",
+              "valor": 50
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"mayor igual\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "score"
+            },
+            "op": "<=",
+            "der": {
+              "tipo": "Entero",
+              "valor": 50
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "Texto",
+              "estilos": [],
+              "contenido": [
+                {
+                  "tipo": "Cadena",
+                  "valor": "\"menor igual\""
+                }
+              ]
+            }
+          ],
+          "elseifs": [],
+          "sino": null
+        },
+        {
+          "tipo": "If",
+          "condicion": {
+            "tipo": "Comparacion",
+            "izq": {
+              "tipo": "Variable",
+              "nombre": "premium"
+            },
+            "op": "==",
+            "der": {
+              "tipo": "Booleano",
+              "valor": true
+            }
+          },
+          "entonces": [
+            {
+              "tipo": "If",
+              "condicion": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "role"
+                },
+                "op": "==",
+                "der": {
+                  "tipo": "Cadena",
+                  "valor": "\"admin\""
+                }
+              },
+              "entonces": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Admin premium confirmado\""
+                    }
+                  ]
+                }
+              ],
+              "elseifs": [],
+              "sino": {
+                "tipo": "Else",
+                "elementos": [
+                  {
+                    "tipo": "Texto",
+                    "estilos": [],
+                    "contenido": [
+                      {
+                        "tipo": "Cadena",
+                        "valor": "\"Usuario premium\""
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "elseifs": [],
+          "sino": {
+            "tipo": "Else",
+            "elementos": [
+              {
+                "tipo": "Texto",
+                "estilos": [],
+                "contenido": [
+                  {
+                    "tipo": "Cadena",
+                    "valor": "\"Sin premium\""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "switchComponent",
+      "parametros": [
+        {
+          "tipo": "string",
+          "nombre": "status"
+        },
+        {
+          "tipo": "int",
+          "nombre": "code"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "Switch",
+          "valor": {
+            "tipo": "Variable",
+            "nombre": "status"
+          },
+          "casos": [
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"active\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "badge-green"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Activo\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"inactive\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "badge-red"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Inactivo\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"pending\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "badge-yellow"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Pendiente\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "defecto": {
+            "tipo": "Default",
+            "elementos": [
+              {
+                "tipo": "Texto",
+                "estilos": [
+                  "badge-gray"
+                ],
+                "contenido": [
+                  {
+                    "tipo": "Cadena",
+                    "valor": "\"Estado desconocido\""
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Switch",
+          "valor": {
+            "tipo": "Variable",
+            "nombre": "code"
+          },
+          "casos": [
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"200\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"OK\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"404\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"No encontrado\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"500\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Error interno\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "defecto": null
+        },
+        {
+          "tipo": "Switch",
+          "valor": {
+            "tipo": "Variable",
+            "nombre": "status"
+          },
+          "casos": [
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"withForm\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Formulario",
+                  "estilos": [],
+                  "inputs": [
+                    {
+                      "tipo": "InputText",
+                      "attrs": {
+                        "estilos": [],
+                        "id": {
+                          "tipo": "Cadena",
+                          "valor": "\"field\""
+                        },
+                        "label": {
+                          "tipo": "Cadena",
+                          "valor": "\"Campo\""
+                        },
+                        "value": {
+                          "tipo": "Cadena",
+                          "valor": "\"\""
+                        }
+                      }
+                    }
+                  ],
+                  "submit": null
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Cadena",
+                "valor": "\"withImage\""
+              },
+              "elementos": [
+                {
+                  "tipo": "Imagen",
+                  "estilos": [
+                    "case_img"
+                  ],
+                  "urls": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"https://example.com/case.png\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "defecto": {
+            "tipo": "Default",
+            "elementos": [
+              {
+                "tipo": "Seccion",
+                "estilos": [
+                  "default_section"
+                ],
+                "elementos": [
+                  {
+                    "tipo": "Texto",
+                    "estilos": [],
+                    "contenido": [
+                      {
+                        "tipo": "Cadena",
+                        "valor": "\"Caso por defecto con seccion\""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "tipo": "Switch",
+          "valor": {
+            "tipo": "Variable",
+            "nombre": "status"
+          },
+          "casos": [
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Booleano",
+                "valor": true
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Es verdadero\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Case",
+              "valor": {
+                "tipo": "Booleano",
+                "valor": false
+              },
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Es falso\""
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "defecto": null
+        }
+      ]
+    },
+    {
+      "tipo": "Componente",
+      "nombre": "dashboardComponent",
+      "parametros": [
+        {
+          "tipo": "string",
+          "nombre": "username"
+        },
+        {
+          "tipo": "int",
+          "nombre": "itemCount"
+        },
+        {
+          "tipo": "boolean",
+          "nombre": "isAdmin"
+        },
+        {
+          "tipo": "function",
+          "nombre": "onLogout"
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "header",
+            "sticky"
+          ],
+          "elementos": [
+            {
+              "tipo": "Seccion",
+              "estilos": [
+                "logo"
+              ],
+              "elementos": [
+                {
+                  "tipo": "Imagen",
+                  "estilos": [
+                    "logo-img"
+                  ],
+                  "urls": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"https://example.com/logo.png\""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "Seccion",
+              "estilos": [
+                "user-info"
+              ],
+              "elementos": [
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "greeting"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Bienvenido, \""
+                    },
+                    {
+                      "tipo": "Variable",
+                      "nombre": "username"
+                    }
+                  ]
+                },
+                {
+                  "tipo": "Texto",
+                  "estilos": [
+                    "count-badge"
+                  ],
+                  "contenido": [
+                    {
+                      "tipo": "Cadena",
+                      "valor": "\"Items: \""
+                    },
+                    {
+                      "tipo": "Variable",
+                      "nombre": "itemCount"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "nav"
+          ],
+          "elementos": [
+            {
+              "tipo": "If",
+              "condicion": {
+                "tipo": "Comparacion",
+                "izq": {
+                  "tipo": "Variable",
+                  "nombre": "isAdmin"
+                },
+                "op": "==",
+                "der": {
+                  "tipo": "Booleano",
+                  "valor": true
+                }
+              },
+              "entonces": [
+                {
+                  "tipo": "Seccion",
+                  "estilos": [
+                    "admin-links"
+                  ],
+                  "elementos": [
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "link"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Usuarios\""
+                        }
+                      ]
+                    },
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "link"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Configuracion\""
+                        }
+                      ]
+                    },
+                    {
+                      "tipo": "Texto",
+                      "estilos": [
+                        "link"
+                      ],
+                      "contenido": [
+                        {
+                          "tipo": "Cadena",
+                          "valor": "\"Reportes\""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "elseifs": [],
+              "sino": {
+                "tipo": "Else",
+                "elementos": [
+                  {
+                    "tipo": "Seccion",
+                    "estilos": [
+                      "user-links"
+                    ],
+                    "elementos": [
+                      {
+                        "tipo": "Texto",
+                        "estilos": [
+                          "link"
+                        ],
+                        "contenido": [
+                          {
+                            "tipo": "Cadena",
+                            "valor": "\"Mi perfil\""
+                          }
+                        ]
+                      },
+                      {
+                        "tipo": "Texto",
+                        "estilos": [
+                          "link"
+                        ],
+                        "contenido": [
+                          {
+                            "tipo": "Cadena",
+                            "valor": "\"Mis items\""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "main-content"
+          ],
+          "elementos": [
+            {
+              "tipo": "Tabla",
+              "estilos": [
+                "tabla-wrapper"
+              ],
+              "filas": [
+                {
+                  "tipo": "Fila",
+                  "celdas": [
+                    {
+                      "tipo": "Celda",
+                      "elementos": [
+                        {
+                          "tipo": "Texto",
+                          "estilos": [
+                            "th"
+                          ],
+                          "contenido": [
+                            {
+                              "tipo": "Cadena",
+                              "valor": "\"Item\""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tipo": "Celda",
+                      "elementos": [
+                        {
+                          "tipo": "Texto",
+                          "estilos": [
+                            "th"
+                          ],
+                          "contenido": [
+                            {
+                              "tipo": "Cadena",
+                              "valor": "\"Estado\""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tipo": "ForEach",
+              "array": "itemCount",
+              "item": "item",
+              "elementos": "}",
+              "empty": null
+            }
+          ]
+        },
+        {
+          "tipo": "Seccion",
+          "estilos": [
+            "footer"
+          ],
+          "elementos": [
+            {
+              "tipo": "Formulario",
+              "estilos": [],
+              "inputs": [
+                {
+                  "tipo": "InputBool",
+                  "attrs": {
+                    "estilos": [],
+                    "id": {
+                      "tipo": "Cadena",
+                      "valor": "\"confirm\""
+                    },
+                    "label": {
+                      "tipo": "Cadena",
+                      "valor": "\"Confirmar salida\""
+                    },
+                    "value": {
+                      "tipo": "Booleano",
+                      "valor": false
+                    }
+                  }
+                }
+              ],
+              "submit": {
+                "tipo": "Submit",
+                "estilos": [
+                  "btn-logout"
+                ],
+                "label": {
+                  "tipo": "Cadena",
+                  "valor": "\"Cerrar sesion\""
+                },
+                "funcion": {
+                  "tipo": "LlamadaFuncion",
+                  "nombre": "onLogout",
+                  "args": [
+                    {
+                      "tipo": "ArgInput",
+                      "nombre": "confirm"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
